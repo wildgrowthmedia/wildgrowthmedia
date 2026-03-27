@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wild Growth Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Wild Growth Media</h1>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Story-driven films about people, nature, and impact.</h2>
+</section>
+
+<section id="work" class="grid">
+
+  <div class="project" onclick="openModal('https://player.vimeo.com/video/76979871')">
+    <img src="https://via.placeholder.com/600x400">
+    <h3>Project Title 1</h3>
+  </div>
+
+</section>
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <p>Wild Growth Media creates documentary and branded films focused on environmental and social impact.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+</section>
+
+<div id="modal" class="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
