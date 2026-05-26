@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Wild Growth Media</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">Wild Growth Media</a>
+
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="mailto:hello@wildgrowthmedia.com">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Documentary / Branded / Impact</p>
+      <h1>Films for brands, people, and stories rooted in the real world.</h1>
+    </section>
+
+    <section id="work" class="work-grid">
+
+      <article class="project"
+        data-client="Land Rover"
+        data-title="John Mayer Goes Outside"
+        data-vimeo="https://player.vimeo.com/video/460989255">
+        <div class="media">
+          <div class="poster" style="background-image: url('./images/land-rover.jpg');"></div>
+          <iframe src="https://player.vimeo.com/video/460989255?background=1&autoplay=1&loop=1&muted=1"
+            allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="project-info">
+          <h2>Land Rover</h2>
+          <p>John Mayer Goes Outside</p>
+        </div>
+      </article>
+
+      <article class="project"
+        data-client="Pfizer"
+        data-title="Hemophilia"
+        data-vimeo="https://player.vimeo.com/video/289689802">
+        <div class="media">
+          <div class="poster" style="background-image: url('./images/pfizer.jpg');"></div>
+          <iframe src="https://player.vimeo.com/video/289689802?background=1&autoplay=1&loop=1&muted=1"
+            allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="project-info">
+          <h2>Pfizer</h2>
+          <p>Hemophilia</p>
+        </div>
+      </article>
+
+      <article class="project"
+        data-client="Pedigree"
+        data-title="By My Side"
+        data-vimeo="https://player.vimeo.com/video/780458027?h=e01b120a14">
+        <div class="media">
+          <div class="poster" style="background-image: url('./images/pedigree.jpg');"></div>
+          <iframe src="https://player.vimeo.com/video/780458027?h=e01b120a14&background=1&autoplay=1&loop=1&muted=1"
+            allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="project-info">
+          <h2>Pedigree</h2>
+          <p>By My Side</p>
+        </div>
+      </article>
+
+      <article class="project"
+        data-client="Toyota"
+        data-title="Proving Grounds"
+        data-vimeo="https://player.vimeo.com/video/289713787">
+        <div class="media">
+          <div class="poster" style="background-image: url('./images/toyota.jpg');"></div>
+          <iframe src="https://player.vimeo.com/video/289713787?background=1&autoplay=1&loop=1&muted=1"
+            allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="project-info">
+          <h2>Toyota</h2>
+          <p>Proving Grounds</p>
+        </div>
+      </article>
+
+      <article class="project"
+        data-client="Vanguard"
+        data-title="CME Group"
+        data-vimeo="https://player.vimeo.com/video/289691604?h=fece5dc8c6">
+        <div class="media">
+          <div class="poster" style="background-image: url('./images/vanguard.jpg');"></div>
+          <iframe src="https://player.vimeo.com/video/289691604?h=fece5dc8c6&background=1&autoplay=1&loop=1&muted=1"
+            allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="project-info">
+          <h2>Vanguard</h2>
+          <p>CME Group</p>
+        </div>
+      </article>
+
+      <article class="project"
+        data-client="Samsung"
+        data-title="Heather Hardy"
+        data-vimeo="https://player.vimeo.com/video/376562754">
+        <div class="media">
+          <div class="poster" style="background-image: url('./images/samsung.jpg');"></div>
+          <iframe src="https://player.vimeo.com/video/376562754?background=1&autoplay=1&loop=1&muted=1"
+            allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="project-info">
+          <h2>Samsung</h2>
+          <p>Heather Hardy</p>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="about" class="about">
+      <p>
+        Wild Growth Media creates documentary and branded films with a focus on human stories,
+        environmental work, and impact-driven storytelling.
+      </p>
+      <a href="mailto:hello@wildgrowthmedia.com">hello@wildgrowthmedia.com</a>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <button class="close" id="closeModal">Close</button>
+    <iframe id="modalVideo" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
