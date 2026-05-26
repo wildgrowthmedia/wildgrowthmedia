@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background: #f4f1ea;
+  background: #f5f2ec;
   color: #111;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
@@ -15,16 +15,12 @@ a {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 28px;
-  background: rgba(244, 241, 234, 0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .logo {
@@ -34,35 +30,39 @@ a {
 
 nav {
   display: flex;
-  gap: 22px;
+  gap: 24px;
   font-size: 14px;
 }
 
 .intro {
-  padding: 110px 28px 90px;
-  max-width: 920px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 120px 32px 110px;
 }
 
 .eyebrow {
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 22px;
+  letter-spacing: 0.14em;
+  margin-bottom: 24px;
 }
 
 h1 {
-  font-size: clamp(42px, 8vw, 96px);
+  max-width: 980px;
+  font-size: clamp(46px, 8vw, 108px);
   line-height: 0.95;
   font-weight: 400;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.065em;
   margin: 0;
 }
 
 .work-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px 120px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 56px 24px;
-  padding: 0 28px 100px;
+  gap: 72px 28px;
 }
 
 .project {
@@ -73,7 +73,7 @@ h1 {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: #d8d2c8;
+  background: #ddd6cc;
 }
 
 .poster,
@@ -94,7 +94,6 @@ h1 {
 .media iframe {
   border: 0;
   opacity: 0;
-  transform: scale(1.02);
   transition: opacity 0.35s ease;
 }
 
@@ -107,9 +106,9 @@ h1 {
 }
 
 .project-info {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
   padding-top: 14px;
   font-size: 15px;
 }
@@ -127,18 +126,23 @@ h1 {
 }
 
 .about {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 90px 32px 140px;
+}
+
+.about p {
   max-width: 760px;
-  padding: 80px 28px 120px;
-  font-size: clamp(24px, 4vw, 42px);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  font-size: clamp(28px, 4vw, 52px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  margin: 0;
 }
 
 .about a {
   display: inline-block;
-  margin-top: 28px;
+  margin-top: 32px;
   font-size: 18px;
-  letter-spacing: 0;
   border-bottom: 1px solid currentColor;
 }
 
@@ -167,30 +171,30 @@ h1 {
   position: fixed;
   top: 24px;
   right: 28px;
-  background: none;
+  background: transparent;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.55);
   padding: 10px 14px;
   cursor: pointer;
 }
 
 @media (max-width: 760px) {
   .site-header {
-    padding: 18px;
+    padding: 22px 18px;
+  }
+
+  nav {
+    gap: 16px;
+  }
+
+  .intro {
+    padding: 84px 18px 72px;
   }
 
   .work-grid {
     grid-template-columns: 1fr;
-    padding: 0 18px 70px;
-    gap: 44px;
-  }
-
-  .intro {
-    padding: 80px 18px 70px;
-  }
-
-  .about {
-    padding: 60px 18px 90px;
+    padding: 0 18px 80px;
+    gap: 48px;
   }
 
   .project-info {
@@ -200,5 +204,9 @@ h1 {
   .project-info p {
     text-align: left;
     margin-top: 4px;
+  }
+
+  .about {
+    padding: 70px 18px 100px;
   }
 }
