@@ -6,7 +6,7 @@ body {
   margin: 0;
   background: #f5f2ec;
   color: #111;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
